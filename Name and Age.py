@@ -1,12 +1,12 @@
 from datetime import date
 import time
 import random
+import os
 
 yellow = "\033[93m"
 reset = "\033[0m"
 
 def age_calc():
-    print()
     name = input("What is your name? ")
     age = int(input("How old are you? "))
     print()
@@ -29,17 +29,34 @@ def age_calc():
     print("And you will turn 100 at the year of " + f"{yellow}{predicted_year}{reset}")
     print()
 
+def cont():
+    while True:
+        prompt2 = input("Press " f"{yellow}(Spacebar){reset}" " to Continue: ").replace(' ','')
+        print()
+        if prompt2 == "":
+            os.system("cls")
+            break
+        else:
+            print()
+            os.system("cls")
+            print("**Enter a valid input** " f"{yellow}(Spacebar){reset} " )
+            print()
+
 while True:
-    start = input("Would you like to try and calculate your age? (yes/no): ").lower().replace(' ','')
+    start = input("Would you like to try and calculate your age? " f"{yellow}(yes/no){reset}"": " ).lower().replace(' ','')
+    os.system("cls")
     if start == "no":
+        print("***Ending Program***")
         break  
 
     elif start == "yes":
         age_calc()
         print()
+        cont()
 
     else:
-        print("Please enter a valid input (yes/no)")
+        os.system("cls")
+        print("***Please enter a valid input*** " f"{yellow}(yes/no){reset}")
         print()
 
     
