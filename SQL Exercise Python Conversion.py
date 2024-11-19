@@ -67,3 +67,5 @@ if __name__ == "__main__":
     os.system("cls")
     file_path = "C:\\Users\\keith\\OneDrive\\Desktop\\Sheet21.csv"
     compute_grade(file_path)
+
+#hi my name is keith
