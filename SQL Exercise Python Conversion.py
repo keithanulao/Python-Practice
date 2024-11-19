@@ -68,4 +68,3 @@ if __name__ == "__main__":
     file_path = "C:\\Users\\keith\\OneDrive\\Desktop\\Sheet21.csv"
     compute_grade(file_path)
 
-#hi my name is keith
