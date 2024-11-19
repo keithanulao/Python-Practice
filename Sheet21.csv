@@ -1,0 +1,11 @@
+Grade ,min_mark,max_mark,,ID,Name,Marks
+F,0,9,,1,Julia,88
+F,10,19,,2,Samantha,68
+F,20,29,,3,Maria,99
+F,30,39,,4,Scarlet,78
+F,40,49,,5,Ashley ,63
+F,50,59,,6,Jane,81
+D,60,69,,,,
+C,70,79,,,,
+B,80,89,,,,
+A,90,100,,,,
